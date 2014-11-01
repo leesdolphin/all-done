@@ -4,7 +4,6 @@ module.exports = function (callback_fn) {
 
     var make_callback = function (wrapped_callback) {
         queue_count++;
-        console.log("Creating callback. Have ", queue_count, " pending");
         return function () {
             if (wrapped_callback)
                 wrapped_callback.apply(this, arguments);
