@@ -1,6 +1,6 @@
 {
   "name": "all-done",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple node package that supports firing a callback once all other callbacks are completed.",
   "homepage": "https://github.com/leesdolphin/all-done",
   "repository": {

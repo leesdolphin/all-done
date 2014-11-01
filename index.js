@@ -1,4 +1,4 @@
-module.export = function all_done(callback_fn) {
+module.exports = function (callback_fn) {
     var queue_count = 0;
     var locked = false;
 
@@ -17,7 +17,7 @@ module.export = function all_done(callback_fn) {
 
     make_callback.lock = function () {
         locked = true;
-        return this;
+        return make_callback;
     };
     make_callback.unlock = function () {
         if (locked && queue_count <= 0) {
@@ -25,7 +25,7 @@ module.export = function all_done(callback_fn) {
             callback_fn();
         }
         locked = false;
-        return this;
+        return make_callback;
     };
 
     return make_callback;
