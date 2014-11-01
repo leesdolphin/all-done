@@ -1,0 +1,16 @@
+{
+  "name": "all-done",
+  "version": "0.1.0",
+  "description": "A simple node package that supports firing a callback once all other callbacks are completed.",
+  "homepage": "https://github.com/leesdolphin/all-done",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leesdolphin/all-done.git"
+  }
+  "bugs": "https://github.com/leesdolphin/all-done/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Lee Symes"
+  },
+  "main": "./index.js"
+}
